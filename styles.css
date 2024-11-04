@@ -1,0 +1,13 @@
+.grid {
+    border: black 2px solid;
+    display: flex;
+    flex-wrap: wrap;
+    height: 40vw;
+    width: 90vw;
+    margin: 100px auto;
+}
+
+.square {
+    border: black 2px solid;
+    flex: 1 1 auto;
+}
