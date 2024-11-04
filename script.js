@@ -35,6 +35,7 @@ function populateGrid(gridSize) {
             newSquare.classList.add("square")
             newSquare.style.minWidth = `${100 / gridSize}%`
             newSquare.style.minHeight = `${100 / gridSize}%`
+            newSquare.style.opacity = 0
 
             // add a hover effect
             newSquare.addEventListener("mouseenter", handleHover);
@@ -46,8 +47,14 @@ function populateGrid(gridSize) {
 
 function handleHover() {
 
+    // get the current opacity of the square, defaulting to 0 if not set
+    let squareOpacity = parseFloat(this.style.opacity) || 0;
+
     // randomize the square's RGB values
-    this.style.backgroundColor = `rgb(${getRandomRGBValue()}, ${getRandomRGBValue()}, ${getRandomRGBValue()})`
+    this.style.backgroundColor = `rgba(${getRandomRGBValue()}, ${getRandomRGBValue()}, ${getRandomRGBValue()}, ${squareOpacity + 0.1})`;
+
+    // increment the opacity by 10%, capping at 1 (fully opaque)
+    this.style.opacity = Math.min(squareOpacity + 0.1, 1).toString();
 
     // simply make the square red
     //this.classList.add("hover")
