@@ -1,5 +1,5 @@
 .grid {
-    border: black 2px solid;
+    border: 2px solid black;
     display: flex;
     flex-wrap: wrap;
     height: 800px;
@@ -8,10 +8,17 @@
 }
 
 .square {
-    border: black 2px solid;
+    border: 1px solid black;
     box-sizing: border-box;
+    flex: 1 1 auto;
 }
 
 .hover {
     background-color: red;
+}
+
+#new-grid-btn {
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
