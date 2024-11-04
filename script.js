@@ -45,6 +45,15 @@ function populateGrid(gridSize) {
 }
 
 function handleHover() {
-    this.classList.add("hover")
+
+    // randomize the square's RGB values
+    this.style.backgroundColor = `rgb(${getRandomRGBValue()}, ${getRandomRGBValue()}, ${getRandomRGBValue()})`
+
+    // simply make the square red
+    //this.classList.add("hover")
 }
 
+function getRandomRGBValue() {
+    // return a number between [0, 255]
+    return Math.floor(Math.random() * 256);
+}
