@@ -2,6 +2,10 @@
 
 A simple Etch-a-Sketch game developed as part of The Odin Project's JavaScript Foundations section. This project showcases fundamental JavaScript skills along with CSS and HTML to create an interactive drawing grid that changes color and darkens as the user hovers over each square.
 
+## Live Demo
+
+https://jameslafontaine.github.io/odin-etch-a-sketch/
+
 ## Project Description
 
 This project is a browser-based Etch-a-Sketch drawing app that allows users to create art by "etching" over a grid. It demonstrates the use of JavaScript for dynamically creating and styling elements, as well as for handling user interactions with the DOM.
